@@ -1,9 +1,8 @@
 let dado = prompt("Digite um dado :");
 
-// Converte o dado para número (se for possível)
+
 let dadoConvertido = Number(dado);
 
-// Verifica o tipo do dado
 let VerificarTipo = confirm("Você deseja verificar o tipo do dado informado?");
 
 if (VerificarTipo) {
