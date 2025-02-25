@@ -5,6 +5,10 @@ document.getElementById('campo').addEventListener('click', ()=>{
     
     valores.push(valor);
 
-    alert(valores);
+    var valoresOrdenados = valores.sort();
+
+    for (let i = 0; i < array.length; index++) {
+        const element = array[i]
+    }
 
 });
