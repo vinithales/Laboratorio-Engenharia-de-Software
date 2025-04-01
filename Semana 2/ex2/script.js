@@ -1,10 +1,11 @@
-setTimeout(() => {
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-
-    alert(`${hours}:${minutes}:${seconds}`);
+function atualizarRelogio() {
+    let agora = new Date();
+    let horas = agora.getHours().toString().padStart(2, '0');
+    let minutos = agora.getMinutes().toString().padStart(2, '0');
+    let segundos = agora.getSeconds().toString().padStart(2, '0');
     
-    setTimeout(arguments.callee, 1000);
-}, 1);
+    document.getElementById("relogio").textContent = `${horas}:${minutos}:${segundos}`;
+}
+
+setInterval(atualizarRelogio, 1000);
+atualizarRelogio(); 
